@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="150000dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/borderresource"
+        android:background="#ff9000"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Login"
+        android:id="@+id/textView3"
+        android:textColor="#fffaf8ff"
+        android:textSize="25pt"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="25dp" />
+
+    <ImageView
+        android:layout_width="150000dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/footerresource"
+        android:background="#ff9000"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:id="@+id/imageView2"
+        android:src="@drawable/marker"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_above="@+id/imageView3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/imageView3"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:padding="11dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="wachtwoord"
+                android:padding="11dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:layout_below="@+id/editText2"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="33dp"
+                android:text="Log In"
+                android:background="@drawable/button"
+                android:layout_alignLeft="@+id/editText2"
+                android:layout_alignStart="@+id/editText2"
+                android:layout_alignRight="@+id/editText2"
+                android:layout_alignEnd="@+id/editText2" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:layout_below="@+id/button1"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="33dp"
+                android:text="Registreren"
+                android:background="@drawable/button"
+                android:layout_alignLeft="@+id/editText2"
+                android:layout_alignStart="@+id/editText2"
+                android:layout_alignRight="@+id/editText2"
+                android:layout_alignEnd="@+id/editText2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:text="Log In with Facebook"
+                android:background="@drawable/button"
+                android:layout_below="@+id/button2"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2"
+                android:layout_marginTop="33dp"
+                android:layout_alignRight="@+id/button2"
+                android:layout_alignEnd="@+id/button2" />
+
+            <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                android:id="@+id/twitter_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/button3"
+                android:layout_alignLeft="@+id/button3"
+                android:layout_alignStart="@+id/button3"
+                android:layout_marginTop="33dp"
+                android:layout_alignRight="@+id/button3"
+                android:layout_alignEnd="@+id/button3" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

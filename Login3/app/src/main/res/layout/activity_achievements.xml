@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:id="@+id/relativeLayout"
+    tools:context="com.example.hoofdgebruiker.opensportslayout.map">
+
+    <ImageView
+        android:layout_width="150000dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/borderresource"
+        android:background="#ff9000"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Achievements"
+        android:id="@+id/textView3"
+        android:textColor="#fffaf8ff"
+        android:textSize="25pt"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="25dp" />
+
+    <ImageView
+        android:layout_width="150000dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/footerresource"
+        android:background="#ff9000"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:id="@+id/imageView2"
+        android:src="@drawable/marker"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandableListView3"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/imageView3" />
+
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.robbie.multipleactivities.activity2">
+    <ImageView
+        android:layout_width="150000dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/borderresource"
+        android:background="#ff9000"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Register"
+        android:id="@+id/textView3"
+        android:textColor="#fffaf8ff"
+        android:textSize="25pt"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="25dp" />
+
+    <ImageView
+        android:layout_width="150000dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/footerresource"
+        android:background="#ff9000"
+        android:layout_alignParentBottom="true"/>
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:id="@+id/imageView2"
+        android:src="@drawable/marker"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/imageView3"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="voornaam"
+                android:padding="11dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:ems="10"
+                android:inputType="textPersonName" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="achternaam"
+                android:padding="11dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="emailadres"
+                android:padding="11dp"
+                android:layout_below="@+id/editText2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="wachtwoord"
+                android:padding="11dp"
+                android:layout_below="@+id/editText3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="wachtwoord"
+                android:padding="11dp"
+                android:layout_below="@+id/editText4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:background="@drawable/button"
+                android:layout_below="@+id/editText5"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="33dp"
+                android:text="Registreren" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
